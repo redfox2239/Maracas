@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		31DC7EB2575EAE400AF7B1A2 /* Pods_Marakasu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B4D9CC05D8601F83579367 /* Pods_Marakasu.framework */; };
+		7F606DAE2095EF9500FE14A2 /* YouTubeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F606DAD2095EF9500FE14A2 /* YouTubeListViewController.swift */; };
+		7F606DB02095FB3C00FE14A2 /* LoadingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F606DAF2095FB3C00FE14A2 /* LoadingManager.swift */; };
 		7FC79E7820955EFE00C8060C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC79E7720955EFE00C8060C /* AppDelegate.swift */; };
 		7FC79E7A20955EFE00C8060C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC79E7920955EFE00C8060C /* ViewController.swift */; };
 		7FC79E7D20955EFE00C8060C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC79E7B20955EFE00C8060C /* Main.storyboard */; };
@@ -38,7 +40,8 @@
 /* Begin PBXFileReference section */
 		12B4D9CC05D8601F83579367 /* Pods_Marakasu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marakasu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78ED8C84230B7B34D1501ED3 /* Pods-Marakasu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marakasu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marakasu/Pods-Marakasu.release.xcconfig"; sourceTree = "<group>"; };
-		7F5E32052095A4FA00292D38 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		7F606DAD2095EF9500FE14A2 /* YouTubeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeListViewController.swift; sourceTree = "<group>"; };
+		7F606DAF2095FB3C00FE14A2 /* LoadingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingManager.swift; sourceTree = "<group>"; };
 		7FC79E7420955EFE00C8060C /* Marakasu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marakasu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC79E7720955EFE00C8060C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FC79E7920955EFE00C8060C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,7 +117,8 @@
 				7FC79E7E20955EFF00C8060C /* Assets.xcassets */,
 				7FC79E8020955EFF00C8060C /* LaunchScreen.storyboard */,
 				7FC79E8320955EFF00C8060C /* Info.plist */,
-				7F5E32052095A4FA00292D38 /* BridgeHeader.h */,
+				7F606DAD2095EF9500FE14A2 /* YouTubeListViewController.swift */,
+				7F606DAF2095FB3C00FE14A2 /* LoadingManager.swift */,
 			);
 			path = Marakasu;
 			sourceTree = "<group>";
@@ -343,8 +347,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F606DB02095FB3C00FE14A2 /* LoadingManager.swift in Sources */,
 				7FC79E7A20955EFE00C8060C /* ViewController.swift in Sources */,
 				7FC79E7820955EFE00C8060C /* AppDelegate.swift in Sources */,
+				7F606DAE2095EF9500FE14A2 /* YouTubeListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +534,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ReoHarada.Marakasu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Marakasu/BridgeHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -549,7 +555,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ReoHarada.Marakasu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Marakasu/BridgeHeader.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

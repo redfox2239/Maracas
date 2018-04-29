@@ -19,14 +19,22 @@ class ViewController: UIViewController,YTPlayerViewDelegate {
     var motionManager = CMMotionManager()
     let musicTime = TimeInterval(5)
     var pos = (0,0,0)
-    let videoId = "F9L7QAL5m5g"
+    var videoId = ""
     let playerVars = ["playsinline":1]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setMotionManager()
         youtubePlayerView.delegate = self
-        youtubePlayerView.load(withVideoId: videoId, playerVars: playerVars)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+        if videoId != "" {
+            LoadingManager.shared.showLoading()
+            youtubePlayerView.load(withVideoId: videoId, playerVars: playerVars)
+        }
     }
     
     func playerView(_ playerView: YTPlayerView, didChangeTo state: YTPlayerState) {
@@ -46,6 +54,10 @@ class ViewController: UIViewController,YTPlayerViewDelegate {
         case .unknown:
             print("unknown")
         }
+    }
+    
+    func playerViewDidBecomeReady(_ playerView: YTPlayerView) {
+        LoadingManager.shared.hideLoading()
     }
     
     func setAudioPlayer() -> AVAudioPlayer? {
@@ -96,18 +108,21 @@ class ViewController: UIViewController,YTPlayerViewDelegate {
     }
     var state = buttonState.start
     @IBAction func tapStartButton(_ sender: UIButton) {
+        if videoId == "" {
+            return
+        }
         var height = CGFloat(0)
         switch state {
         case .start:
             youtubePlayerView.playVideo()
             state = buttonState.stop
-            sender.setTitle("ストップ", for: .normal)
-            height = 50
+            sender.setTitle("ミュージックストップ", for: .normal)
+            height = 300
             break
         default:
             youtubePlayerView.stopVideo()
             state = buttonState.start
-            sender.setTitle("スタート", for: .normal)
+            sender.setTitle("ミュージックスタート", for: .normal)
         }
         yotubePlayerViewHeight.constant = height
         UIView.animate(withDuration: 0.5) {
