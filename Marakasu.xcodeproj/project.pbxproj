@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31DC7EB2575EAE400AF7B1A2 /* Pods_Marakasu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B4D9CC05D8601F83579367 /* Pods_Marakasu.framework */; };
 		7FC79E7820955EFE00C8060C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC79E7720955EFE00C8060C /* AppDelegate.swift */; };
 		7FC79E7A20955EFE00C8060C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC79E7920955EFE00C8060C /* ViewController.swift */; };
 		7FC79E7D20955EFE00C8060C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC79E7B20955EFE00C8060C /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		7FC79E8220955EFF00C8060C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC79E8020955EFF00C8060C /* LaunchScreen.storyboard */; };
 		7FC79E8D20955EFF00C8060C /* MarakasuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC79E8C20955EFF00C8060C /* MarakasuTests.swift */; };
 		7FC79E9820955EFF00C8060C /* MarakasuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC79E9720955EFF00C8060C /* MarakasuUITests.swift */; };
+		7FC79EA6209560E500C8060C /* maracas.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7FC79EA5209560E500C8060C /* maracas.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12B4D9CC05D8601F83579367 /* Pods_Marakasu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marakasu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78ED8C84230B7B34D1501ED3 /* Pods-Marakasu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marakasu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marakasu/Pods-Marakasu.release.xcconfig"; sourceTree = "<group>"; };
+		7F5E32052095A4FA00292D38 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		7FC79E7420955EFE00C8060C /* Marakasu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marakasu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC79E7720955EFE00C8060C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FC79E7920955EFE00C8060C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,8 @@
 		7FC79E9320955EFF00C8060C /* MarakasuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarakasuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FC79E9720955EFF00C8060C /* MarakasuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarakasuUITests.swift; sourceTree = "<group>"; };
 		7FC79E9920955EFF00C8060C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FC79EA5209560E500C8060C /* maracas.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = maracas.m4a; sourceTree = "<group>"; };
+		C0EB6D466AE82766661AFF62 /* Pods-Marakasu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marakasu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marakasu/Pods-Marakasu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31DC7EB2575EAE400AF7B1A2 /* Pods_Marakasu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,8 @@
 				7FC79E8B20955EFF00C8060C /* MarakasuTests */,
 				7FC79E9620955EFF00C8060C /* MarakasuUITests */,
 				7FC79E7520955EFE00C8060C /* Products */,
+				F5FC20B1788E4EF86C9EF7E1 /* Pods */,
+				9E87338C512147E550CBA842 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +107,14 @@
 		7FC79E7620955EFE00C8060C /* Marakasu */ = {
 			isa = PBXGroup;
 			children = (
+				7FC79EA5209560E500C8060C /* maracas.m4a */,
 				7FC79E7720955EFE00C8060C /* AppDelegate.swift */,
 				7FC79E7920955EFE00C8060C /* ViewController.swift */,
 				7FC79E7B20955EFE00C8060C /* Main.storyboard */,
 				7FC79E7E20955EFF00C8060C /* Assets.xcassets */,
 				7FC79E8020955EFF00C8060C /* LaunchScreen.storyboard */,
 				7FC79E8320955EFF00C8060C /* Info.plist */,
+				7F5E32052095A4FA00292D38 /* BridgeHeader.h */,
 			);
 			path = Marakasu;
 			sourceTree = "<group>";
@@ -125,6 +137,23 @@
 			path = MarakasuUITests;
 			sourceTree = "<group>";
 		};
+		9E87338C512147E550CBA842 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12B4D9CC05D8601F83579367 /* Pods_Marakasu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5FC20B1788E4EF86C9EF7E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0EB6D466AE82766661AFF62 /* Pods-Marakasu.debug.xcconfig */,
+				78ED8C84230B7B34D1501ED3 /* Pods-Marakasu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FC79E9C20955EFF00C8060C /* Build configuration list for PBXNativeTarget "Marakasu" */;
 			buildPhases = (
+				9701AB09CBA5DF9AB72FD064 /* [CP] Check Pods Manifest.lock */,
 				7FC79E7020955EFE00C8060C /* Sources */,
 				7FC79E7120955EFE00C8060C /* Frameworks */,
 				7FC79E7220955EFE00C8060C /* Resources */,
+				E9378CFEF20D3E72570D9573 /* [CP] Embed Pods Frameworks */,
+				F8E02ABD2424E325E7469298 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,6 +264,7 @@
 				7FC79E8220955EFF00C8060C /* LaunchScreen.storyboard in Resources */,
 				7FC79E7F20955EFF00C8060C /* Assets.xcassets in Resources */,
 				7FC79E7D20955EFE00C8060C /* Main.storyboard in Resources */,
+				7FC79EA6209560E500C8060C /* maracas.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +283,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9701AB09CBA5DF9AB72FD064 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marakasu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9378CFEF20D3E72570D9573 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Marakasu/Pods-Marakasu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marakasu/Pods-Marakasu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8E02ABD2424E325E7469298 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marakasu/Pods-Marakasu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7FC79E7020955EFE00C8060C /* Sources */ = {
@@ -363,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +504,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -428,16 +515,20 @@
 		};
 		7FC79E9D20955EFF00C8060C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0EB6D466AE82766661AFF62 /* Pods-Marakasu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U435EYR422;
 				INFOPLIST_FILE = Marakasu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ReoHarada.Marakasu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Marakasu/BridgeHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,16 +536,20 @@
 		};
 		7FC79E9E20955EFF00C8060C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78ED8C84230B7B34D1501ED3 /* Pods-Marakasu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U435EYR422;
 				INFOPLIST_FILE = Marakasu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ReoHarada.Marakasu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = Marakasu/BridgeHeader.h;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
